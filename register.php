@@ -8,7 +8,7 @@ $email    = $_POST['email'];
 $password = $_POST['password'];
 
 // cek apakah username sudah ada
-$cek = mysqli_query($koneksi, "SELECT * FROM user WHERE email='$email'");
+$cek = mysqli_query($connect, "SELECT * FROM user WHERE email='$email'");
 if(mysqli_num_rows($cek) > 0){
     echo "<script>alert('Email sudah ada!'); window.location='register.html';</script>";
     exit;

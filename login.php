@@ -15,7 +15,7 @@
     if($cek > 0){
         $_SESSION['email'] = $email;
         $_SESSION['status'] = "login";
-        header("location:tableShow.php");
+        header("location:tableuserShow.php");
     }
     else{
         echo "<script> alert ('Login gagal! Email atau password tidak benar');</script>";

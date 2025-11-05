@@ -124,7 +124,7 @@ button, a.btn {
   text-decoration: none;
 }
 .logout-btn:hover {
-  background-color: #d4c4ff;
+  background-color: #d4c4ffff;
 }
 
 /* Garis dekorasi */
@@ -173,7 +173,7 @@ hr {
     </tr>
     <?php  
       include 'conn.php';
-      $data = mysqli_query($connect, "SELECT * FROM crudweb");
+      $data = mysqli_query($connect, "SELECT * FROM user");
       while($d = mysqli_fetch_array($data)){
     ?>
     <tr>
